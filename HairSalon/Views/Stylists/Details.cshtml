@@ -1,0 +1,20 @@
+@using HairSalon.Models;
+
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<h2>Stylist Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)</h3>
+
+<ul>
+@if (@Model.Clients.Count == 0)
+{
+  <p>no clients yet!</p>
+}
+
+<p>@Html.ActionLink("Add new stylist", "Create")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
