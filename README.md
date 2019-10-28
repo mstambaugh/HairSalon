@@ -1,4 +1,4 @@
-# _Console Bakery_
+# _Hair Salon_
 
 #### A local database application in C# using EF Core and SQL for_**Epicodus**_
 
